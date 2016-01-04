@@ -1,0 +1,6 @@
+C:\Users\Dan\Documents\GitHub\znake\Znake\Znake\bin\Debug\Znake.exe.config
+C:\Users\Dan\Documents\GitHub\znake\Znake\Znake\bin\Debug\Znake.exe
+C:\Users\Dan\Documents\GitHub\znake\Znake\Znake\bin\Debug\Znake.pdb
+C:\Users\Dan\Documents\GitHub\znake\Znake\Znake\obj\Debug\Znake.csprojResolveAssemblyReference.cache
+C:\Users\Dan\Documents\GitHub\znake\Znake\Znake\obj\Debug\Znake.exe
+C:\Users\Dan\Documents\GitHub\znake\Znake\Znake\obj\Debug\Znake.pdb
