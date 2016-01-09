@@ -15,19 +15,8 @@ namespace Znake
 			Point p2 = new Point(2, 3, '*');
 			p2.Draw();
 
-			List<int> numList = new List<int>();
-			numList.Add(0);
-			numList.Add(1);
-			numList.Add(2);
-
-			int x = numList[0];
-			int y = numList[1];
-			int z = numList[2];
-
-			foreach(int i in numList)
-			{
-				Console.WriteLine(i);
-			}
+			HL line = new HL(1,18,5,'=');
+			line.Draw();
 
 			Console.ReadLine();
 		}
