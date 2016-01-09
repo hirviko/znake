@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Znake
 {
-	class HL : Fig
+	class VL : Fig
 	{
-		public HL(int xL, int xR, int y, char sym) 
+		public VL(int x, int yT, int yB, char sym)
 		{
 			pList = new List<Point>();
-			for (int x = xL; x <= xR; x++)
+			for (int y = yT; y <= yB; y++)
 			{
 				Point p = new Point(x, y, sym);
 				pList.Add(p);

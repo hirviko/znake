@@ -10,13 +10,19 @@ namespace Znake
 	{
 		static void Main(string[] args)
 		{
-			Point p1 = new Point(1,3,'*');
-			p1.Draw();
-			Point p2 = new Point(2, 3, '*');
-			p2.Draw();
+			Console.SetBufferSize(80, 25);
 
-			HL line = new HL(1,18,5,'=');
-			line.Draw();
+			HL line1 = new HL(0,78,0,'-');
+			line1.Draw();
+
+			HL line2 = new HL(0,78,24,'-');
+			line2.Draw();
+
+			VL line3 = new VL(0,0,24,'|');
+			line3.Draw();
+
+			VL line4 = new VL(78,0,24,'|');
+			line4.Draw();
 
 			Console.ReadLine();
 		}
