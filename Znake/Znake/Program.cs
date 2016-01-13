@@ -12,17 +12,21 @@ namespace Znake
 		{
 			Console.SetBufferSize(80, 25);
 
-			HL line1 = new HL(0,78,0,'-');
+			HL line1 = new HL(0,78,0,'*');
 			line1.Draw();
 
-			HL line2 = new HL(0,78,24,'-');
+			HL line2 = new HL(0,78,24,'*');
 			line2.Draw();
 
-			VL line3 = new VL(0,0,24,'|');
+			VL line3 = new VL(0,0,24,'*');
 			line3.Draw();
 
-			VL line4 = new VL(78,0,24,'|');
+			VL line4 = new VL(78,0,24,'*');
 			line4.Draw();
+
+			Point p = new Point(7,5,'*');
+			Snake snake = new Snake(p, 5, Direx.RIGHT);
+			snake.Draw();
 
 			Console.ReadLine();
 		}

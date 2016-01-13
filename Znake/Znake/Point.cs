@@ -19,6 +19,21 @@ namespace Znake
 			sym = _sym;
 		}
 
+		public Point(Point p)
+		{
+			x = p.x;
+			y = p.y;
+			sym = p.sym;
+		}
+
+		public void Move(int offset, Direx direction)
+		{
+			if(direction == Direx.RIGHT) { x = x + offset; }
+			else if(direction == Direx.LEFT) { x = x - offset; }
+			else if(direction == Direx.UP) { y = y + offset; }
+			else if (direction == Direx.DOWN) { y = y - offset; }
+		}
+
 		public void Draw()
 		{
 			Console.SetCursorPosition(x, y);
