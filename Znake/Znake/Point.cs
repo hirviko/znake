@@ -30,14 +30,20 @@ namespace Znake
 		{
 			if(direction == Direx.RIGHT) { x = x + offset; }
 			else if(direction == Direx.LEFT) { x = x - offset; }
-			else if(direction == Direx.UP) { y = y + offset; }
-			else if (direction == Direx.DOWN) { y = y - offset; }
+			else if(direction == Direx.UP) { y = y - offset; }
+			else if (direction == Direx.DOWN) { y = y + offset; }
 		}
 
 		public void Draw()
 		{
 			Console.SetCursorPosition(x, y);
 			Console.Write(sym);
+		}
+
+		public void Clear()
+		{
+			sym = ' ';
+			Draw();
 		}
 	}
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Znake
@@ -28,7 +29,18 @@ namespace Znake
 			Snake snake = new Snake(p, 5, Direx.RIGHT);
 			snake.Draw();
 
-			Console.ReadLine();
+			while (true)
+			{
+				if (Console.KeyAvailable)
+				{
+					ConsoleKeyInfo key = Console.ReadKey();
+					snake.HandleKey(key.Key);
+				}
+				Thread.Sleep(150);
+				snake.Move();
+			}
+
+			//Console.ReadLine();
 		}
 	}
 }
